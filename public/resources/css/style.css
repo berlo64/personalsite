@@ -31,5 +31,6 @@ body {
 
 .giulio span {
   font-size: 6rem;
-  color: RGB(230, 230, 250);
+  background-color: RGB(220, 20, 60);
+  color: RGB(255, 255, 255);
 }
