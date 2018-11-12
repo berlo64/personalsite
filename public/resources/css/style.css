@@ -5,7 +5,6 @@ html {
 }
 
 body {
-  height: 100vh;
   background-color: RGB(255, 140, 0);
 }
 
@@ -16,12 +15,6 @@ header {
   top: 0;
   height: 3rem;
   width: 100%;
-}
-
-header .name {
-  color: rgb(255, 255, 255);
-  font-family: 'Bungee', 'Permanent Marker', 'Pacifico', sans-serif;
-  font-size: 3rem;
 }
 
 /* MAIN */
@@ -35,13 +28,16 @@ header .name {
   top: 3rem;
   bottom: 3rem;
   width: 100%;
+  box-sizing: border-box;
+  padding: 0 2rem;
 }
 
 .main p {
   color: rgb(255, 255, 255);
-  font-family: 'Permanent Marker', 'Pacifico', sans-serif;
+  font-family: 'Source Code Pro', monospace, sans-serif;
+  width: 100%;
   font-size: 2rem;
-  margin: 1rem 1rem;
+  padding: 1rem 0;
   text-align: center;
 }
 
