@@ -8,6 +8,7 @@ body {
   background-image: url(../images/astronaut.jpg);
   background-size: cover;
   font-family: 'Roboto', monospace, sans-serif;
+  height: 100vh;
 }
 
 /* HEADER */
@@ -27,14 +28,45 @@ nav.site-nav ul {
 
 nav.site-nav li {
   color: rgb(255, 255, 255);
-  margin-right: 1rem;
-  margin-top: 1rem;
+  margin: 1rem 1rem 0 1rem;
   font-weight: bold;
+  font-size: 1rem;
 }
 
-nav.site-nav a {
-  font-size: 1rem;
+nav.site-nav li:hover {
+  color: rgb(178, 117, 129);
+}
+
+nav a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 810px) {
+  header {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 518px) {
+  nav.desktop {
+    display: none;
+  }
+
+  nav .fa.fa-lg {
+    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    margin: 1rem 1rem 0 1rem;
+  }
+
+  nav .fa.fa-lg:hover {
+    color: rgb(178, 117, 129);
+  }
+}
+
+@media only screen and (min-width: 518px) {
+  nav.mobile {
+    display: none;
+  }
 }
 
 /* MAIN */
@@ -42,7 +74,7 @@ nav.site-nav a {
 .main {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: absolute;
   top: 3rem;
   bottom: 3rem;
@@ -54,7 +86,7 @@ nav.site-nav a {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: 50%;
+  width: 55%;
   height: 100%;
   margin: 0 0;
   padding: 0 0;
@@ -64,19 +96,59 @@ nav.site-nav a {
 .main .presentation p {
   background-color: rgb(178, 117, 129);
   color: rgb(255, 255, 255);
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
-  padding-left: 2rem;
+  padding: 1rem 2rem;
   text-align: left;
   mix-blend-mode: lighten;
-  width: 60%;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
-.main .img-container {
-  width: 50%;
-  height: 100%;
-/*  background-color: rgb(0, 0, 0); */
+#par_one {
+  width: 19.375rem;
+}
+
+#par_two {
+  font-size: 2rem;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 810px) {
+  .main div.presentation {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  #par_one {
+    font-size: 2.5rem;
+    width: 16.25rem;
+  }
+
+  #par_two {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 314px) {
+  .main {
+    justify-content: center;
+  }
+
+  .main .presentation p {
+    padding: 2rem 0;
+    margin: 0 0;
+    text-align: center;
+  }
+
+  #par_one {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  #par_two {
+    display: none;
+  }
 }
 
 /* FOOTER */
@@ -86,12 +158,22 @@ footer {
   bottom: 0;
   height: 3rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
 }
 
 footer .fa {
   color: rgb(255, 255, 255);
-  margin-right: 1rem;
+  margin: 0 1rem;
+}
+
+footer .fa:hover {
+  color: rgb(178, 117, 129);
+}
+
+@media only screen and (max-width: 810px) {
+  footer {
+    justify-content: center;
+  }
 }

@@ -2,9 +2,9 @@ var i = 0;
 var a = 0;
 //var b = 0;
 var txt_one = "HI, I'M GIULIO."; /* The text */
-var txt_two = "I don't fucking know what to write here"; /* The text */
+var txt_two = "Don't mind me, I'm just a guy/astronaut who started a course on how to build a website from scratch and now he's trying to apply what he has learnt."; /* The text */
 // var txt_three = 'The answer my friend is blowing in the wind, or maybe is only one click from you, who knows...'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+var speed = 40; /* The speed/duration of the effect in milliseconds */
 
 document.addEventListener('DOMContentLoaded', typeWriter_one);
 
