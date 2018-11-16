@@ -9,6 +9,7 @@ body {
   background-size: cover;
   font-family: 'Roboto', monospace, sans-serif;
   height: 100vh;
+  overflow: hidden;
 }
 
 /* HEADER */
@@ -32,12 +33,11 @@ nav.site-nav li {
   padding: 1rem 1rem;
   font-weight: bold;
   font-size: 1rem;
-  background-color: rgb(178, 117, 129);
-  mix-blend-mode: luminosity;
+  background-color: rgba(178, 34, 34, 0.75);
 }
 
 nav.site-nav li:hover {
-  color: rgb(55, 55, 55);
+  color: rgb(25, 25, 112);
 }
 
 nav a {
@@ -59,14 +59,21 @@ nav a {
     display: none;
   }
 
+  nav.mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
   nav .fa.fa-lg {
     color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
-    margin: 1rem 1rem 0 1rem;
+    padding: 1rem 1rem;
+    background-color: rgba(178, 34, 34, 0.75);
   }
 
   nav .fa.fa-lg:hover {
-    color: rgb(55, 55, 55);
+    color: rgb(25, 25, 112);
   }
 }
 
@@ -101,7 +108,7 @@ nav a {
 }
 
 .main .presentation p {
-  background-color: rgb(178, 117, 129);
+  background-color: rgba(178, 34, 34, 0.45);
   color: rgb(255, 255, 255);
   font-size: 3rem;
   font-weight: bold;
@@ -172,17 +179,30 @@ footer {
 
 footer .fa {
   color: rgb(255, 255, 255);
-  padding-right: 2rem;
-  background-color: rgb(178, 117, 129);
-  mix-blend-mode: luminosity;
+  padding: 1rem 2rem 1rem 0;
+  margin-bottom: 1rem;
+  background-color: rgba(178, 34, 34, 0.75);
+}
+
+#facebook {
+  padding-left: 1rem;
+}
+
+#linkedin {
+  margin-right: 2rem;
+  padding-right: 1rem;
 }
 
 footer .fa:hover {
-  color: rgb(55, 55, 55);
+  color: rgb(25, 25, 112);
 }
 
 @media only screen and (max-width: 810px) {
   footer {
     justify-content: center;
+  }
+
+  #linkedin {
+    margin-right: 0;
   }
 }
