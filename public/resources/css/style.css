@@ -5,21 +5,19 @@ html {
 }
 
 body {
-  background-image: url(../images/astronaut.jpg);
-  background-size: cover;
   font-family: 'Roboto', monospace, sans-serif;
-  height: 100vh;
 }
 
 /* HEADER */
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 4rem;
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  z-index: 2;
 }
 
 nav.site-nav ul {
@@ -85,14 +83,15 @@ nav a {
 /* MAIN */
 
 .main {
+  background-image: url(../images/astronaut.jpg);
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  position: absolute;
-  bottom: 4rem;
-  top: 4rem;
+  position: relative;
   width: 100%;
   box-sizing: border-box;
+  height: 100vh;
 }
 
 .main div.presentation {
@@ -164,10 +163,17 @@ nav a {
   }
 }
 
+/* ABOUT */
+
+.me {
+  height: 100vh;
+  background-color: orange;
+}
+
 /* FOOTER */
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   height: 4rem;
   display: flex;
