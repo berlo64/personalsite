@@ -2,10 +2,12 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Roboto', monospace, sans-serif;
+  color: rgb(64, 64, 64);
 }
 
 /* HEADER */
@@ -22,7 +24,7 @@ header {
 
 nav.site-nav ul {
   display: flex;
-  margin: 1rem 2rem 0 0;
+  margin: 1rem 2rem 1rem 0;
 }
 
 nav.site-nav li {
@@ -112,7 +114,7 @@ nav a {
   padding: 1rem 2rem;
   text-align: left;
   mix-blend-mode: luminosity;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 #par_one {
@@ -153,7 +155,7 @@ i.fas.fa-angle-down.fa-2x:hover {
 
   #par_two,
   #par_three {
-    font-size: 1.5rem;
+    display: none;
   }
 }
 
@@ -172,30 +174,128 @@ i.fas.fa-angle-down.fa-2x:hover {
     font-size: 2rem;
     width: 100%;
   }
-
-  #par_two,
-  #par_three {
-    display: none;
-  }
 }
 
 /* ABOUT */
 
 .me {
-  height: 100vh;
   display: flex;
   justify-content: center;
 }
 
-div .img {
-  background-image: url("../images/primo-piano-Giulio.jpg");
-  background-size: cover;
-  border: 2px solid rgb(0, 128, 128);
-  height: 8rem;
-  width: 8rem;
+/* SKILLS */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem 0 2rem 0;;
+}
+
+.chptr_sk {
+  font-size: 2.5rem;
+  padding: 2rem 15rem 1rem 15rem;
+  border-bottom: 0.2rem solid rgba(178, 34, 34);
+  font-weight: bolder;
+}
+
+.lst_sk {
+  display: flex;
+  width: 30rem;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+}
+
+.skill.name {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  width: 15rem;
+}
+
+.skill.score {
+  display: flex;
+  justify-content: space-around;
+  width: 15rem;
+}
+
+.skill.score .circle.full {
   border-radius: 100%;
-  margin-top: 5rem;
-  z-index: 3;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: rgba(178, 34, 34, 0.75);
+}
+
+.skill.score .circle.semi {
+  border-bottom-left-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+  height: 1.5rem;
+  width: 0.75rem;
+  background-color: rgba(178, 34, 34, 0.75);
+}
+
+.skill.score .circle.empty {
+  border-radius: 100%;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 2px solid rgba(178, 34, 34, 0.75);
+}
+
+@media only screen and (max-width: 530px) {
+  .chptr_sk {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .lst_sk {
+    width: 100%;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  .skill.name {
+    font-size: 1rem;
+    width: 45%;
+  }
+
+  .skill.score {
+    width: 45%;
+  }
+
+  .skill.score .circle.full {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .skill.score .circle.semi {
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    height: 1rem;
+    width: 0.5rem;
+  }
+
+  .skill.score .circle.empty {
+    height: 1rem;
+    width: 1rem;
+    border: 1px solid rgba(178, 34, 34, 0.75);
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .chptr_sk {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 /* FOOTER */
