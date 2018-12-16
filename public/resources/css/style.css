@@ -180,24 +180,29 @@ i.fas.fa-angle-down.fa-2x:hover {
 
 .me {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-/* SKILLS */
+/* SKILLS, EXPERIENCE & EDUCATION STRUCTURE */
 
-.skills {
+.ttl-curr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0.5rem 0 2rem 0;;
+  margin: 0.5rem 0 2rem 0;
 }
 
-.chptr_sk {
+.chptr {
   font-size: 2.5rem;
-  padding: 2rem 15rem 1rem 15rem;
+  padding: 2rem 0 1rem 0;
   border-bottom: 0.2rem solid rgba(178, 34, 34);
   font-weight: bolder;
+  width: 40rem;
+  text-align: center;
 }
+
+/* SKILLS */
 
 .lst_sk {
   display: flex;
@@ -223,7 +228,7 @@ i.fas.fa-angle-down.fa-2x:hover {
 
 .skill.score {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 15rem;
 }
 
@@ -232,6 +237,8 @@ i.fas.fa-angle-down.fa-2x:hover {
   height: 1.5rem;
   width: 1.5rem;
   background-color: rgba(178, 34, 34, 0.75);
+  border: 2px solid rgba(178, 34, 34, 0.5);
+  margin-left: 1rem;
 }
 
 .skill.score .circle.semi {
@@ -240,6 +247,8 @@ i.fas.fa-angle-down.fa-2x:hover {
   height: 1.5rem;
   width: 0.75rem;
   background-color: rgba(178, 34, 34, 0.75);
+  border: 2px solid rgba(178, 34, 34, 0.5);
+  margin-left: 1.75rem;
 }
 
 .skill.score .circle.empty {
@@ -247,12 +256,12 @@ i.fas.fa-angle-down.fa-2x:hover {
   height: 1.5rem;
   width: 1.5rem;
   border: 2px solid rgba(178, 34, 34, 0.75);
+  margin-left: 1rem;
 }
 
 @media only screen and (max-width: 530px) {
-  .chptr_sk {
-    padding-left: 8rem;
-    padding-right: 8rem;
+  .chptr {
+    width: 30rem;
   }
 
   .lst_sk {
@@ -275,6 +284,7 @@ i.fas.fa-angle-down.fa-2x:hover {
   .skill.score .circle.full {
     height: 1rem;
     width: 1rem;
+    border: 1px solid rgba(178, 34, 34, 0.75);
   }
 
   .skill.score .circle.semi {
@@ -282,6 +292,7 @@ i.fas.fa-angle-down.fa-2x:hover {
     border-top-left-radius: 0.5rem;
     height: 1rem;
     width: 0.5rem;
+    border: 1px solid rgba(178, 34, 34, 0.75);
   }
 
   .skill.score .circle.empty {
@@ -292,11 +303,15 @@ i.fas.fa-angle-down.fa-2x:hover {
 }
 
 @media only screen and (max-width: 380px) {
-  .chptr_sk {
+  .chptr {
     padding-left: 5rem;
     padding-right: 5rem;
   }
 }
+
+/* EXPERIENCE */
+
+
 
 /* FOOTER */
 
