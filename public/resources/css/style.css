@@ -202,13 +202,16 @@ i.fas.fa-angle-down.fa-2x:hover {
   text-align: center;
 }
 
-/* SKILLS */
-
-.lst_sk {
+.lst {
   display: flex;
-  width: 30rem;
   flex-direction: column;
   margin-top: 1rem;
+}
+
+/* SKILLS */
+
+.lst.sk {
+  width: 30rem;
 }
 
 .skill {
@@ -228,7 +231,7 @@ i.fas.fa-angle-down.fa-2x:hover {
 
 .skill.score {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 15rem;
 }
 
@@ -248,7 +251,8 @@ i.fas.fa-angle-down.fa-2x:hover {
   width: 0.75rem;
   background-color: rgba(178, 34, 34, 0.75);
   border: 2px solid rgba(178, 34, 34, 0.5);
-  margin-left: 1.75rem;
+  margin-left: 1rem;
+  margin-right: 0.75rem;
 }
 
 .skill.score .circle.empty {
@@ -259,12 +263,30 @@ i.fas.fa-angle-down.fa-2x:hover {
   margin-left: 1rem;
 }
 
+@media only screen and (max-width: 640px) {
+  .chptr {
+    width: 38rem;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .chptr {
+    width: 34rem;
+  }
+}
+
+@media only screen and (max-width: 548px) {
+  .chptr {
+    width: 32rem;
+  }
+}
+
 @media only screen and (max-width: 530px) {
   .chptr {
     width: 30rem;
   }
 
-  .lst_sk {
+  .lst {
     width: 100%;
   }
 
@@ -273,45 +295,110 @@ i.fas.fa-angle-down.fa-2x:hover {
   }
 
   .skill.name {
-    font-size: 1rem;
+    font-size: 1.4rem;
     width: 45%;
+  }
+
+  .skill.score {
+    width: 40%;
+  }
+
+  .skill.score .circle.full {
+    height: 1.25rem;
+    width: 1.25rem;
+    border: 1px solid rgba(178, 34, 34, 0.75);
+  }
+
+  .skill.score .circle.semi {
+    border-bottom-left-radius: 0.6255rem;
+    border-top-left-radius: 0.625rem;
+    height: 1.25rem;
+    width: 0.625rem;
+    border: 1px solid rgba(178, 34, 34, 0.75);
+  }
+
+  .skill.score .circle.empty {
+    height: 1.25rem;
+    width: 1.25rem;
+    border: 1px solid rgba(178, 34, 34, 0.75);
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .chptr {
+    width: 28rem;
   }
 
   .skill.score {
     width: 45%;
   }
+}
 
-  .skill.score .circle.full {
-    height: 1rem;
-    width: 1rem;
-    border: 1px solid rgba(178, 34, 34, 0.75);
+@media only screen and (max-width: 450px) {
+  .chptr {
+    width: 26rem;
   }
 
-  .skill.score .circle.semi {
-    border-bottom-left-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
-    height: 1rem;
-    width: 0.5rem;
-    border: 1px solid rgba(178, 34, 34, 0.75);
-  }
-
-  .skill.score .circle.empty {
-    height: 1rem;
-    width: 1rem;
-    border: 1px solid rgba(178, 34, 34, 0.75);
+  .skill.score {
+    width: 45%;
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 420px) {
   .chptr {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    width: 24rem;
+  }
+
+  .skill.score {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 384px) {
+  .chptr {
+    width: 23.2rem;
   }
 }
 
 /* EXPERIENCE */
 
+.lst.exp {
+  width: 35rem;
+}
 
+.exp.scs {
+  margin-bottom: 2rem;
+}
+
+.firm {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.time {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.work {
+  font-size: 1.4rem;
+}
+
+.work p {
+  margin-bottom: 0.5rem;
+}
+
+
+
+.job {
+  padding-top: 1rem;
+  text-align: justify;
+}
 
 /* FOOTER */
 
