@@ -191,6 +191,7 @@ i.fas.fa-angle-down.fa-2x:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 0.5rem 0 2rem 0;
 }
 
@@ -383,6 +384,16 @@ i.fas.fa-angle-down.fa-2x:hover {
   }
 }
 
+@media only screen and (max-width: 378px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  div.lst {
+    width: 21rem;
+  }
+}
+
 /* EXPERIENCE & EDUCATION */
 
 .lst {
@@ -471,6 +482,149 @@ i.fas.fa-angle-down.fa-2x:hover {
   margin-bottom: 0;
 }
 
+/* PROJECTS */
+
+.projects {
+  background-color: rgba(96, 186, 246, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.intro {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  width: 75%;
+  text-align: center;
+}
+
+.projects a {
+  width: 26%;
+  height: 15rem;
+  text-decoration: none;
+  color: rgb(64, 64, 64);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(25, 25, 112, 0.2);
+}
+
+.projects a:hover {
+  box-shadow: 0.4rem 0.4rem 0.4rem 0.2rem rgba(64, 64, 64, 0.5);
+}
+
+div.prjct {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.prjct .name {
+  padding-bottom: 0.5rem;
+}
+
+.screenshot {
+  width: 95%;
+  padding-top: 0.5rem;
+}
+
+.screenshot img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 950px) {
+  .projects a {
+    width: 45%;
+  }
+
+  .intro {
+    width: 90%;
+  }
+
+  div.prjct .name {
+    padding-top: 0.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 830px) {
+  .projects a {
+    height: 13rem;
+  }
+
+  div.prjct .name {
+    padding-top: 0;
+  }
+
+  .screenshot {
+    padding-top: 0rem;
+  }
+
+}
+
+@media only screen and (max-width: 630px) {
+  .projects a {
+    width: 80%;
+    height: 19rem;
+    font-size: 1.4rem;
+  }
+
+  .screenshot {
+    padding-top: 0.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 530px) {
+  .projects a {
+    width: 90%;
+    height: 17rem;
+    font-size: 1.4rem;
+  }
+
+  div.prjct .name {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .screenshot {
+    padding-top: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 410px) {
+  .projects a {
+    width: 90%;
+    height: 14rem;
+    font-size: 1.4rem;
+  }
+
+  div.prjct .name {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .screenshot {
+    padding-top: 0.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 380px) {
+  .projects a {
+    height: 13rem;
+    margin: 1rem 0;
+  }
+
+}
+
 /* FOOTER */
 
 footer {
@@ -481,6 +635,8 @@ footer {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  background-color: rgba(96, 186, 246, 0.6);
+  padding: 2rem 0 1rem 0;
 }
 
 footer .fab {
